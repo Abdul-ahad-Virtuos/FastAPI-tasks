@@ -1,0 +1,32 @@
+
+### 
+POST http://localhost:8000/tasks
+Content-Type: application/json
+
+{
+  "title": "Buy groceries",
+  "description": "2 Buy milk, eggs, and bread",
+  "status": "todo",
+  "priority": "high",
+  "due_date": "2026-01-10"
+}
+
+###
+GET http://localhost:8000/tasks
+
+### 
+GET http://localhost:8000/tasks/2
+
+### 
+PUT http://localhost:8000/tasks/2
+Content-Type: application/json
+
+{
+  "title": "wsaredfg groceries - Updatedzzzz",
+  "status": "in_progress",
+  "priority": "medium"
+}
+
+### 
+
+DELETE http://localhost:8000/tasks/2
